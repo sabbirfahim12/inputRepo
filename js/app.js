@@ -1,17 +1,18 @@
 const submitBtn=document.getElementById("submitBtn");
-submitBtn.addEventListener("click",function(e){
-e.preventDefault();
+submitBtn.addEventListener("click",function(){
+//sob id doria ano
 const message=document.getElementById("message"); 
 const settingwill=document.getElementById("settingwill")     
-const alert=document.getElementById("alert");
+const alertAble=document.getElementById("alert");
 
-if(message ===''){
+if(message.value ===''){
 //class add remove concept and setTimeout concept
-    alert.classList.add('show');
-    setTimeout(function(){
-        alert.classList.remove('show') 
-    },2000)
-}else{
+alertAble.classList.add('show');
+setTimeout(function(){
+ alertAble.classList.remove('show');  
+},2000)
+}
+else{
 settingwill.innerText=message.value;
 }
 
